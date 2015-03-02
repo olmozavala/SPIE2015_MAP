@@ -44,8 +44,8 @@ $univ_opacity: .8;
 	padding: 10px;
 	border: solid;
 	border-width: 1px;
-	opacity: 0;
-	color: $f-color;
+	color: $f-shadow-color;
+	top: 0px;
 	@include user-select(none);
 	@include border-radius();
 }

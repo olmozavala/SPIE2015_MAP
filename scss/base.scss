@@ -5,14 +5,16 @@
 @import "compass/css3";
 
 $background_color: #495565;
-$f-color: black;
+$f-color: white;
+$f-shadow-color: darken($background_color,10);
 $def-border: 15px;
 $def-padding: 5px 10px;
 $warning-color: #d9534f;
 
-body{
-	margin: 0;
-	border: 0;
+html,body{
+	margin: 0px;
+	border: 0px;
+	background-color: $background_color;
 }
 
 @mixin textHalo($haloColor){
@@ -30,6 +32,11 @@ body{
 
 .defText{
 	position: absolute;
+	color: $f-color;
+}
+
+h2{
+	text-align: center;
 }
 
 #errorText{
@@ -37,16 +44,16 @@ body{
 	@include border-radius($def-border);
 	background-color: $warning-color;
 	padding: $def-padding;
+	display: none;
 	top: 90%;
 	left: 10%;
-	display: none;
 }
 
 #mapTitle{
-	@extend .defText;
 	top: 30px;
 	left: 30%;
-	@include textHalo($background_color);
+	@extend .defText;
+	@include textHalo($f-shadow-color);
 }
 
 #maingraph{

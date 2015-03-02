@@ -1,6 +1,5 @@
 var width = $(window).width();
 var height = $(window).height()-20;
-var when = window.when;
 
 var svg = d3.select('#maingraph');
 d3.select('svg')
@@ -28,14 +27,11 @@ var colors = d3.scale.linear()
 		.range(['#FFF8B7', '#9B3600']);
 
 $(function() {
-	initMap();
 	renderMap();
 });
-
-function initMap(){
-}
 
 function dispError(error){
 	$("#errorText").show();
 	$("#errorText").text(error);
 }
+

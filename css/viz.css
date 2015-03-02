@@ -6,18 +6,25 @@
     Created on : Jan 15, 2015, 4:51:56 PM
     Author     : olmozavala
 */
-/* line 13, ../scss/base.scss */
-body {
-  margin: 0;
-  border: 0;
+/* line 14, ../scss/base.scss */
+html, body {
+  margin: 0px;
+  border: 0px;
+  background-color: #495565;
 }
 
-/* line 31, ../scss/base.scss */
+/* line 33, ../scss/base.scss */
 .defText, #errorText, #mapTitle {
   position: absolute;
+  color: white;
 }
 
-/* line 35, ../scss/base.scss */
+/* line 38, ../scss/base.scss */
+h2 {
+  text-align: center;
+}
+
+/* line 42, ../scss/base.scss */
 #errorText {
   -webkit-border-radius: 15px;
   -moz-border-radius: 15px;
@@ -26,19 +33,19 @@ body {
   border-radius: 15px;
   background-color: #d9534f;
   padding: 5px 10px;
+  display: none;
   top: 90%;
   left: 10%;
-  display: none;
-}
-
-/* line 45, ../scss/base.scss */
-#mapTitle {
-  top: 30px;
-  left: 30%;
-  text-shadow: #495565 0 2px 1px, #495565 2px 0 1px, #495565 -2px 0 1px, #495565 0 -2px 1px, #495565 2px 2px 1px, #495565 -2px 2px 1px, #495565 2px -2px 1px, #495565 -2px -2px 1px;
 }
 
 /* line 52, ../scss/base.scss */
+#mapTitle {
+  top: 30px;
+  left: 30%;
+  text-shadow: #343c47 0 2px 1px, #343c47 2px 0 1px, #343c47 -2px 0 1px, #343c47 0 -2px 1px, #343c47 2px 2px 1px, #343c47 -2px 2px 1px, #343c47 2px -2px 1px, #343c47 -2px -2px 1px;
+}
+
+/* line 59, ../scss/base.scss */
 #maingraph {
   background-color: #495565;
 }
@@ -87,8 +94,8 @@ body {
   padding: 10px;
   border: solid;
   border-width: 1px;
-  opacity: 0;
-  color: black;
+  color: #343c47;
+  top: 0px;
   -webkit-user-select: none;
   -moz-user-select: none;
   user-select: none;
