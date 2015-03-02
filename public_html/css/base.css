@@ -1,0 +1,40 @@
+/* 
+    Created on : Jan 15, 2015, 4:51:56 PM
+    Author     : olmozavala
+*/
+/* line 13, ../scss/base.scss */
+body {
+  margin: 0;
+  border: 0;
+}
+
+/* line 31, ../scss/base.scss */
+.defText, #errorText, #mapTitle {
+  position: absolute;
+}
+
+/* line 35, ../scss/base.scss */
+#errorText {
+  -webkit-border-radius: 15px;
+  -moz-border-radius: 15px;
+  -ms-border-radius: 15px;
+  -o-border-radius: 15px;
+  border-radius: 15px;
+  background-color: #d9534f;
+  padding: 5px 10px;
+  top: 90%;
+  left: 10%;
+  display: none;
+}
+
+/* line 45, ../scss/base.scss */
+#mapTitle {
+  top: 30px;
+  left: 30%;
+  text-shadow: white 0 2px 1px, white 2px 0 1px, white -2px 0 1px, white 0 -2px 1px, white 2px 2px 1px, white -2px 2px 1px, white 2px -2px 1px, white -2px -2px 1px;
+}
+
+/* line 52, ../scss/base.scss */
+#maingraph {
+  background-color: white;
+}

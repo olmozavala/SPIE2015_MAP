@@ -1,0 +1,68 @@
+/* 
+    Created on : Feb 28, 2015, 9:33:11 PM
+    Author     : olmozavala
+*/
+@import "base";
+
+$back_color: #DEDEDE;
+$univ_opacity: .8;
+
+.land {
+	stroke:#8A8A8A;
+	stroke-width: .3;
+	/*stroke-linecap: butt,round,square*/
+	/*stroke-dasharray: 10,10 (draw,blanck);*/
+	opacity: .5; 
+}
+
+.blue{
+	@extend .land;
+	fill: blue;
+}
+
+.grid{
+	fill: transparent;
+	stroke: #B9B9B9; 
+	stroke-width: .3;
+	stroke-dasharray: "5,5";
+	opacity: 1;
+}
+
+.institute{
+	stroke: black;
+	stroke-width: .3;
+	opacity: $univ_opacity; }
+
+.current{
+	stroke:#8A8A8A;
+	stroke-width: .3;
+	opacity: .5; }
+
+.tooltip{
+	background-color: white;
+	position: absolute;
+	padding: 10px;
+	border: solid;
+	border-width: 1px;
+	opacity: 0;
+	color: $f-color;
+	@include user-select(none);
+	@include border-radius();
+}
+
+.tooltipInst{
+	@extend .tooltip;
+	background-color: #FEFBE0;
+}
+
+@mixin user-select($value)
+{
+    & {
+        -webkit-touch-callout: $value;
+        -webkit-user-select: $value;
+        -khtml-user-select: $value;
+        -moz-user-select: $value;
+        -ms-user-select: $value;
+        user-select: $value;
+    }
+}

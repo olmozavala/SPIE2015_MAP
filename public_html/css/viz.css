@@ -1,0 +1,105 @@
+/* 
+    Created on : Feb 28, 2015, 9:33:11 PM
+    Author     : olmozavala
+*/
+/* 
+    Created on : Jan 15, 2015, 4:51:56 PM
+    Author     : olmozavala
+*/
+/* line 13, ../scss/base.scss */
+body {
+  margin: 0;
+  border: 0;
+}
+
+/* line 31, ../scss/base.scss */
+.defText, #errorText, #mapTitle {
+  position: absolute;
+}
+
+/* line 35, ../scss/base.scss */
+#errorText {
+  -webkit-border-radius: 15px;
+  -moz-border-radius: 15px;
+  -ms-border-radius: 15px;
+  -o-border-radius: 15px;
+  border-radius: 15px;
+  background-color: #d9534f;
+  padding: 5px 10px;
+  top: 90%;
+  left: 10%;
+  display: none;
+}
+
+/* line 45, ../scss/base.scss */
+#mapTitle {
+  top: 30px;
+  left: 30%;
+  text-shadow: white 0 2px 1px, white 2px 0 1px, white -2px 0 1px, white 0 -2px 1px, white 2px 2px 1px, white -2px 2px 1px, white 2px -2px 1px, white -2px -2px 1px;
+}
+
+/* line 52, ../scss/base.scss */
+#maingraph {
+  background-color: white;
+}
+
+/* line 10, ../scss/viz.scss */
+.land, .blue {
+  stroke: #8A8A8A;
+  stroke-width: .3;
+  /*stroke-linecap: butt,round,square*/
+  /*stroke-dasharray: 10,10 (draw,blanck);*/
+  opacity: .5;
+}
+
+/* line 18, ../scss/viz.scss */
+.blue {
+  fill: blue;
+}
+
+/* line 23, ../scss/viz.scss */
+.grid {
+  fill: transparent;
+  stroke: #B9B9B9;
+  stroke-width: .3;
+  stroke-dasharray: "5,5";
+  opacity: 1;
+}
+
+/* line 31, ../scss/viz.scss */
+.institute {
+  stroke: black;
+  stroke-width: .3;
+  opacity: 0.8;
+}
+
+/* line 36, ../scss/viz.scss */
+.current {
+  stroke: #8A8A8A;
+  stroke-width: .3;
+  opacity: .5;
+}
+
+/* line 41, ../scss/viz.scss */
+.tooltip, .tooltipInst {
+  background-color: white;
+  position: absolute;
+  padding: 10px;
+  border: solid;
+  border-width: 1px;
+  opacity: 0;
+  color: black;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  user-select: none;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -ms-border-radius: 5px;
+  -o-border-radius: 5px;
+  border-radius: 5px;
+}
+
+/* line 53, ../scss/viz.scss */
+.tooltipInst {
+  background-color: #FEFBE0;
+}

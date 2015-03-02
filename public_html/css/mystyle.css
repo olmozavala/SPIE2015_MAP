@@ -1,0 +1,98 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : Jan 15, 2015, 4:51:56 PM
+    Author     : olmozavala
+*/
+/* line 16, ../scss/mystyle.scss */
+body {
+  background-color: #dedede;
+  margin: 0;
+  border: 0;
+}
+
+/* line 21, ../scss/mystyle.scss */
+.world {
+  background-color: #dedede;
+}
+
+/* line 24, ../scss/mystyle.scss */
+.land {
+  fill: #11340a;
+  stroke: #8A8A8A;
+  stroke-width: .3;
+  opacity: .5;
+}
+
+/* line 30, ../scss/mystyle.scss */
+.institute {
+  fill: #bc0d0d;
+  stroke: black;
+  stroke-width: .3;
+  opacity: .5;
+}
+
+/* line 36, ../scss/mystyle.scss */
+.currInst {
+  fill: #ec1010;
+  stroke: black;
+  stroke-width: .3;
+  opacity: .5;
+}
+
+/* line 42, ../scss/mystyle.scss */
+.current {
+  fill: #1f5f12;
+  stroke: #8A8A8A;
+  stroke-width: .3;
+  opacity: .5;
+}
+
+/* line 48, ../scss/mystyle.scss */
+.grid {
+  fill: transparent;
+  stroke: #B9B9B9;
+  stroke-width: .3;
+  /*stroke-dasharray: "5,5";*/
+  opacity: .8;
+}
+
+/* line 55, ../scss/mystyle.scss */
+#tooltip {
+  background-color: white;
+  position: absolute;
+  padding: 10px;
+  border: solid;
+  border-width: 1px;
+  opacity: 0;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  user-select: none;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -ms-border-radius: 5px;
+  -o-border-radius: 5px;
+  border-radius: 5px;
+}
+
+/* line 66, ../scss/mystyle.scss */
+#tooltipInst {
+  background-color: #FEFBE0;
+}
+
+/* line 71, ../scss/mystyle.scss */
+#maingraph {
+  width: 100%;
+}
+
+/* line 75, ../scss/mystyle.scss */
+#mainTitle {
+  padding: 10px;
+  text-align: center;
+  color: black;
+  width: 100%;
+  top: 2%;
+}

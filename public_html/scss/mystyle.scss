@@ -1,0 +1,93 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : Jan 15, 2015, 4:51:56 PM
+    Author     : olmozavala
+*/
+@import "compass";
+
+$land_color: #11340A;
+$inst_color: #BC0D0D;
+$back_color: #DEDEDE;
+
+body {
+	background-color: $back_color;
+	margin: 0;
+	border: 0; }
+
+.world {
+	background-color: $back_color; }
+
+.land {
+	fill: $land_color;
+	stroke:#8A8A8A;
+	stroke-width: .3;
+	opacity: .5; }
+
+.institute{
+	fill: $inst_color;
+	stroke: black;
+	stroke-width: .3;
+	opacity: .5; }
+
+.currInst{
+	fill: adjust-lightness($inst_color, 10);
+	stroke: black;
+	stroke-width: .3;
+	opacity: .5; }
+
+.current{
+	fill: adjust-lightness($land_color, 10);
+	stroke:#8A8A8A;
+	stroke-width: .3;
+	opacity: .5; }
+
+.grid {
+	fill: transparent;
+	stroke: #B9B9B9;
+	stroke-width: .3;
+	/*stroke-dasharray: "5,5";*/
+	opacity: .8; }
+
+#tooltip{
+	background-color: white;
+	position: absolute;
+	padding: 10px;
+	border: solid;
+	border-width: 1px;
+	opacity: 0;
+	@include user-select(none);
+	@include border-radius();
+}
+
+#tooltipInst{
+	@extend .tooltip;
+	background-color: #FEFBE0;
+}
+
+#maingraph{
+	width:100%;
+}
+
+#mainTitle{
+	padding: 10px;
+	text-align: center;
+	color: black;
+	width: 100%;
+	top: 2%;
+}
+
+@mixin user-select($value)
+{
+    & {
+        -webkit-touch-callout: $value;
+        -webkit-user-select: $value;
+        -khtml-user-select: $value;
+        -moz-user-select: $value;
+        -ms-user-select: $value;
+        user-select: $value;
+    }
+}

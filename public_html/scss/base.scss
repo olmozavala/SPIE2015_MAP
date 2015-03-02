@@ -1,0 +1,56 @@
+/* 
+    Created on : Jan 15, 2015, 4:51:56 PM
+    Author     : olmozavala
+*/
+@import "compass/css3";
+
+$background_color: white;
+$f-color: black;
+$def-border: 15px;
+$def-padding: 5px 10px;
+$warning-color: #d9534f;
+
+body{
+	margin: 0;
+	border: 0;
+}
+
+@mixin textHalo($haloColor){
+	$haloSize: 1px;
+	$haloDisp: 2px;//Halo displacement
+	@include text-shadow(   $haloColor 0 $haloDisp $haloSize, 
+                            $haloColor $haloDisp 0 $haloSize,
+                            $haloColor $haloDisp*-1 0 $haloSize,
+                            $haloColor 0 $haloDisp*-1  $haloSize,
+                            $haloColor $haloDisp $haloDisp $haloSize,
+                            $haloColor $haloDisp*-1 $haloDisp $haloSize,
+                            $haloColor $haloDisp $haloDisp*-1 $haloSize,
+                            $haloColor $haloDisp*-1  $haloDisp*-1 $haloSize);
+}
+
+.defText{
+	position: absolute;
+}
+
+#errorText{
+	@extend .defText;
+	@include border-radius($def-border);
+	background-color: $warning-color;
+	padding: $def-padding;
+	top: 90%;
+	left: 10%;
+	display: none;
+}
+
+#mapTitle{
+	@extend .defText;
+	top: 30px;
+	left: 30%;
+	@include textHalo($background_color);
+}
+
+#maingraph{
+	background-color: $background_color;
+}
+
+
